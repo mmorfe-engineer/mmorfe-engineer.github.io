@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venezuelan 911 Dispatch System</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Venezuelan 911 Dispatch System</h1>
     </header>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
     <main>
-        <section id="emergency-calls">
-            <h2>Emergency Calls</h2>
-            <form id="call-form">
-                <label for="caller-name">Caller Name:</label>
-                <input type="text" id="caller-name" name="caller-name" required>
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location" required>
-                <label for="emergency-type">Emergency Type:</label>
-                <select id="emergency-type" name="emergency-type" required>
-                    <option value="fire">Fire</option>
-                    <option value="medical">Medical</option>
-                    <option value="police">Police</option>
-                    <option value="other">Other</option>
-                </select>
-                <button type="submit">Submit</button>
-            </form>
+        <section id="home">
+            <h2>Welcome to the Dispatch System</h2>
+            <p>Your safety is our priority.</p>
         </section>
-        <section id="dispatch-info">
-            <h2>Dispatch Information</h2>
-            <div id="dispatch-list">
-                <!-- Dispatch information will be populated here -->
-            </div>
+        <section id="services">
+            <h2>Services</h2>
+            <p>We provide emergency dispatch services.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For emergencies, call 911.</p>
         </section>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
