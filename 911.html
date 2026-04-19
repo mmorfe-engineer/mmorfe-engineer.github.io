@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venezuelan 911 Dispatch System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Venezuelan 911 Dispatch System</h1>
+    </header>
+    <main>
+        <section id="emergency-calls">
+            <h2>Emergency Calls</h2>
+            <form id="call-form">
+                <label for="caller-name">Caller Name:</label>
+                <input type="text" id="caller-name" name="caller-name" required>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                <label for="emergency-type">Emergency Type:</label>
+                <select id="emergency-type" name="emergency-type" required>
+                    <option value="fire">Fire</option>
+                    <option value="medical">Medical</option>
+                    <option value="police">Police</option>
+                    <option value="other">Other</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="dispatch-info">
+            <h2>Dispatch Information</h2>
+            <div id="dispatch-list">
+                <!-- Dispatch information will be populated here -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
